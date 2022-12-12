@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <style>
+        table, th, td {border: 1px solid black; border-collapse: collapse;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>producer</th>
+            <th>year</th>
+            <th>category</th>
+        </tr>
+        {% for film in data %}
+        <tr>
+            <td>{{ film.id }}</td>
+            <td>{{ film.film_name }}</td>
+            <td>{{ film.film_producer }}</td>
+            <td>{{ film.year }}</td>
+            <td>{{ film.category }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

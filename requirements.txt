@@ -1,0 +1,5 @@
+flask
+requests
+flask-wtf
+pylint==2.15.
+flask_sqlalchemy
